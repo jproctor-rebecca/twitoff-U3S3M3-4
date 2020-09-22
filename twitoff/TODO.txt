@@ -1,0 +1,4 @@
+* Create .env file
+* Grab API keys
+* test within shell that embeddings match up
+* deploy to 
