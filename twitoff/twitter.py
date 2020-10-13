@@ -16,8 +16,8 @@ TWITTER_AUTH.set_access_token(getenv('TWITTER_ACCESS_TOKEN'),
                               getenv('TWITTER_ACCESS_TOKEN_SECRET'))
 TWITTER = tweepy.API(TWITTER_AUTH)
 
+nlp = spacy.load("en_core_web_md")
 def vectorize_tweet(tweet_text):
-    nlp = spacy.load("en_core_web_md")
     return nlp(tweet_text)
 
 def add_or_update_user(username):
